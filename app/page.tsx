@@ -96,12 +96,12 @@ export default function ResumePage() {
 
                     <div className="text-stone-800 dark:text-stone-200 text-sm leading-relaxed mb-6 space-y-3">
                       <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-stone-500 dark:text-stone-400">
-                        <span><strong>役割</strong>: WebアプリのFEの副リーダー</span>
-                        <span><strong>ステータス</strong>: 要件定義〜リリース（現時点で70%ぐらい移植済み）</span>
+                        <span><strong>役割</strong>: テックリード (WebアプリのFEのリーダー)</span>
+                        <span><strong>ステータス</strong>: 要件定義〜リリースに向けて対応中</span>
                       </div>
                       <div>
                         <h5 className="font-bold text-stone-900 dark:text-white mb-1">概要</h5>
-                        <p>既存の大型 Web サービスの全面刷新プロジェクトにおいて、フロントエンドの副リーダーとして設計・実装・チーム運営を推進。技術基盤のゼロ構築から開発ルールの整備、AI を活用した生産性向上まで、技術リードとマネジメント両面に従事。</p>
+                        <p>既存サービスとの連携を前提とした新規サブサービスの立ち上げにおいて、要件定義からリリースまでをテックリードとして推進。開発体制・ルール・環境をゼロから整備し、技術リードに留まらずチームの生産性向上を目的としたマネジメント領域にも積極的に関与。</p>
                       </div>
                     </div>
 
@@ -139,31 +139,34 @@ export default function ResumePage() {
                           <h5 className="text-xs font-bold text-stone-900 dark:text-white mb-3">実施内容</h5>
                           <div className="space-y-4">
                             <div>
-                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">フロントエンド設計・実装</h6>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">AI 活用による開発生産性向上</h6>
                               <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
-                                <li>既存要件を分析し、パフォーマンス・拡張性を考慮したフロントエンドアーキテクチャを再設計</li>
-                                <li>Next.js v15（App Router）による Server / Client Component の役割分担設計</li>
-                                <li>Features ディレクトリ構成による機能単位のモジュール分割</li>
-                                <li>OpenAPI スキーマから Orval で型・API クライアントを自動生成し、型安全な API 連携を実現</li>
-                                <li>非同期処理・エラーハンドリングの共通化によるコード品質の向上</li>
-                                <li>レガシーブラウザ対応（Chrome 95 以上 / iOS 14 以上）</li>
+                                <li>チーム全体で利用できる AI 開発環境（Claude Code）を構築・整備</li>
+                                <li>コード生成・レビュー・画面実装（8 ステップワークフロー）・設計補助など用途別のカスタムスキルを設計・実装</li>
+                                <li>プロンプト・利用ルールの共有によりメンバー間の AI 活用レベルを平準化</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">開発環境・CI/CD の構築</h6>
+                              <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
+                                <li>Next.js v15（App Router）＋ React 19 ＋ TypeScript によるフロントエンド基盤をゼロから設計</li>
+                                <li>Docker による本番・ローカル開発環境の整備</li>
+                                <li>GitHub Actions によるデプロイパイプラインの構築</li>
                               </ul>
                             </div>
                             <div>
                               <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">開発ルールの整備</h6>
                               <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
-                                <li>コーディング規約・アーキテクチャ方針を策定し、リポジトリに内包</li>
-                                <li>ブランチ戦略・コミットメッセージ規約・レビュー基準を文書化</li>
-                                <li>Vitest（UT）＋ Vitest Browser Mode（ブラウザテスト）の2層構造のテスト戦略を策定</li>
-                                <li>ESLint / Prettier / Stylelint による静逆解析環境の整備</li>
+                                <li>コーディング規約・アーキテクチャ方針（Container-Presenter パターン、Server/Client Component 分離）を策定</li>
+                                <li>デザインシステム連携ルール、ブランチ戦略、レビュー基準を文書化しリポジトリに内包</li>
+                                <li>UT(Vitest) + IT(Playwright + <code>next/experimental/testmode/playwright</code>) + E2E(Playwright MCP + 自然言語) の3層構造のテスト戦略の策定</li>
                               </ul>
                             </div>
                             <div>
-                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">AI 活用による開発生産性向上</h6>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">チームビルディング</h6>
                               <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
-                                <li>現行コードのリバースエンジニアリングによる設計書の自動生成</li>
-                                <li>設計書からのコード実装支援（Claude Code を活用）</li>
-                                <li>チームへの AI 活用ルール・プロンプトの共有によりメンバー間の活用レベルを平準化</li>
+                                <li>ワーキングアグリーメントの策定・1on1 等のチームビルディングイベントを企画・実施</li>
+                                <li>開発初期段階からチーム内の認識統一を図り、スムーズな開発体制を構築</li>
                               </ul>
                             </div>
                             <div>
@@ -195,31 +198,27 @@ export default function ResumePage() {
                                 </tr>
                                 <tr>
                                   <td className="py-2 font-medium">スタイル</td>
-                                  <td className="py-2">Sass</td>
+                                  <td className="py-2">Sass、CSS Modules</td>
                                 </tr>
                                 <tr>
                                   <td className="py-2 font-medium">テスト</td>
-                                  <td className="py-2">Vitest、Testing Library、Vitest Browser Mode</td>
+                                  <td className="py-2">Vitest、Testing Library、Playwright、MSW</td>
                                 </tr>
                                 <tr>
                                   <td className="py-2 font-medium">UI カタログ</td>
                                   <td className="py-2">Storybook</td>
                                 </tr>
                                 <tr>
-                                  <td className="py-2 font-medium">API 型生成</td>
-                                  <td className="py-2">Orval（OpenAPI）</td>
+                                  <td className="py-2 font-medium">インフラ</td>
+                                  <td className="py-2">Docker</td>
                                 </tr>
                                 <tr>
-                                  <td className="py-2 font-medium">モック</td>
-                                  <td className="py-2">MSW（Mock Service Worker）</td>
-                                </tr>
-                                <tr>
-                                  <td className="py-2 font-medium">モニタリング</td>
-                                  <td className="py-2">New Relic</td>
+                                  <td className="py-2 font-medium">CI/CD</td>
+                                  <td className="py-2">GitHub Actions</td>
                                 </tr>
                                 <tr>
                                   <td className="py-2 font-medium">AI</td>
-                                  <td className="py-2">Claude Code</td>
+                                  <td className="py-2">Claude Code（カスタムスキル構築・チーム展開）</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -661,7 +660,7 @@ export default function ResumePage() {
                           </ul>
 
                           <h5 className="text-xs font-bold text-emerald-600 dark:text-emerald-500 mb-1">成果</h5>
-                          <p className="text-xs text-stone-700 dark:text-stone-300">新規開発 of 電子カルテの機能を一部リリース。</p>
+                          <p className="text-xs text-stone-700 dark:text-stone-300">新規開発の電子カルテの機能を一部リリース。</p>
                         </div>
                       </div>
                     </div>
