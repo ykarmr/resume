@@ -324,11 +324,18 @@ export default function ResumePage() {
                       </span>
                     </div>
 
-                    <div className="text-stone-800 dark:text-stone-200 text-sm leading-relaxed mb-6 space-y-2">
-                      <h5 className="font-bold text-stone-900 dark:text-white">プロジェクト概要</h5>
-                      <p>現在運用されている大型Webアプリの刷新プロジェクト</p>
+                    <div className="text-stone-800 dark:text-stone-200 text-sm leading-relaxed mb-6 space-y-3">
+                      <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-stone-500 dark:text-stone-400">
+                        <span><strong>役割</strong>: WebアプリのFEの副リーダー</span>
+                        <span><strong>ステータス</strong>: 要件定義〜リリース（現時点で70%ぐらい移植済み）</span>
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-stone-900 dark:text-white mb-1">概要</h5>
+                        <p>既存の大型 Web サービスの全面刷新プロジェクトにおいて、フロントエンドの副リーダーとして設計・実装・チーム運営を推進。技術基盤のゼロ構築から開発ルールの整備、AI を活用した生産性向上まで、技術リードとマネジメント両面に従事。</p>
+                      </div>
                     </div>
 
+                    {/* 詳細グリッド */}
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-6 border-t border-stone-100 dark:border-stone-800/60">
                       <div className="md:col-span-1 space-y-4">
                         <div>
@@ -357,40 +364,96 @@ export default function ResumePage() {
 
                       <div className="md:col-span-3 space-y-6">
                         <div>
-                          <h5 className="text-xs font-bold text-stone-900 dark:text-white mb-2">担当業務</h5>
-                          <ul className="list-disc list-inside text-xs text-stone-700 dark:text-stone-300 space-y-1">
-                            <li>FEチームの開発に関する基盤や方針の制定</li>
-                            <li>FEの設計および実装に従事</li>
-                            <li>既存システムの課題を分析し、刷新プロジェクトの技術基盤を整備</li>
-                          </ul>
-                        </div>
-
-                        <div>
-                          <h5 className="text-xs font-bold text-stone-900 dark:text-white mb-3">業務内容</h5>
-                          <div className="space-y-4 text-xs text-stone-700 dark:text-stone-300 leading-relaxed">
+                          <h5 className="text-xs font-bold text-stone-900 dark:text-white mb-3">実施内容</h5>
+                          <div className="space-y-4">
                             <div>
-                              <h6 className="font-bold text-stone-900 dark:text-white mb-1">■ 設計 (フロントエンド)</h6>
-                              <p className="text-stone-600 dark:text-stone-400 pl-2">既存の要件に基づき、ユーザーインターフェースの再設計を担当。パフォーマンス向上や拡張性を考慮したフロントエンドアーキテクチャを再設計。</p>
-                            </div>
-                            <div>
-                              <h6 className="font-bold text-stone-900 dark:text-white mb-1">■ 実装 (フロントエンド)</h6>
-                              <ul className="list-disc list-inside text-stone-600 dark:text-stone-400 pl-2 space-y-1">
-                                <li>React, TypeScript, Next.js(App Router)などを活用した機能実装。</li>
-                                <li>API連携部分の非同期処理やエラーハンドリングを効率的に構築。</li>
-                                <li>パフォーマンス改善を目的としたコードのリファクタリングを実施。</li>
-                                <li>レガシーブラウザ対応：Chrome38以上、IOS12.2以上。</li>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">フロントエンド設計・実装</h6>
+                              <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
+                                <li>既存要件を分析し、パフォーマンス・拡張性を考慮したフロントエンドアーキテクチャを再設計</li>
+                                <li>Next.js v15（App Router）による Server / Client Component の役割分担設計</li>
+                                <li>Features ディレクトリ構成による機能単位のモジュール分割</li>
+                                <li>OpenAPI スキーマから Orval で型・API クライアントを自動生成し、型安全な API 連携を実現</li>
+                                <li>非同期処理・エラーハンドリングの共通化によるコード品質の向上</li>
+                                <li>レガシーブラウザ対応（Chrome 95 以上 / iOS 14 以上）</li>
                               </ul>
                             </div>
                             <div>
-                              <h6 className="font-bold text-stone-900 dark:text-white mb-1">■ 開発チームの実装方針やルールの制定</h6>
-                              <p className="text-stone-600 dark:text-stone-400 pl-2">コーディングルール、Gitのルール、開発に関するイベントスケジュール、実装方針の制定。</p>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">開発ルールの整備</h6>
+                              <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
+                                <li>コーディング規約・アーキテクチャ方針を策定し、リポジトリに内包</li>
+                                <li>ブランチ戦略・コミットメッセージ規約・レビュー基準を文書化</li>
+                                <li>Vitest（UT）＋ Vitest Browser Mode（ブラウザテスト）の2層構造のテスト戦略を策定</li>
+                                <li>ESLint / Prettier / Stylelint による静的解析環境の整備</li>
+                              </ul>
                             </div>
                             <div>
-                              <h6 className="font-bold text-stone-900 dark:text-white mb-1">■ AIを利用した効率化</h6>
-                              <p className="text-stone-600 dark:text-stone-400 pl-2">現行コードからのリバースエンジニアリングでの設計書作成、設計書からのコードの実装。</p>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">AI 活用による開発生産性向上</h6>
+                              <ul className="list-disc list-inside text-xs text-stone-600 dark:text-stone-400 pl-2 space-y-1">
+                                <li>現行コードのリバースエンジニアリングによる設計書の自動生成</li>
+                                <li>設計書からのコード実装支援（Claude Code を活用）</li>
+                                <li>チームへの AI 活用ルール・プロンプトの共有によりメンバー間の活用レベルを平準化</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h6 className="text-xs font-bold text-stone-900 dark:text-white border-l-2 border-amber-600 pl-2 mb-1">他職能との連携</h6>
+                              <p className="text-xs text-stone-600 dark:text-stone-400 pl-2">要件定義フェーズからデザイナー・バックエンドエンジニア・プロダクトマネージャーと連携し、技術的課題を早期に洗い出し</p>
                             </div>
                           </div>
                         </div>
+
+                        {/* 技術スタックテーブル */}
+                        <div className="pt-4 border-t border-stone-100 dark:border-stone-800/60">
+                          <h5 className="text-xs font-bold text-stone-900 dark:text-white mb-3">技術スタック</h5>
+                          <div className="overflow-x-auto">
+                            <table className="min-w-full text-xs text-stone-600 dark:text-stone-400">
+                              <thead>
+                                <tr className="border-b border-stone-200 dark:border-stone-800">
+                                  <th className="py-2 text-left font-bold text-stone-500 dark:text-stone-500 w-1/3">分類</th>
+                                  <th className="py-2 text-left font-bold text-stone-500 dark:text-stone-500">技術</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-stone-100 dark:divide-stone-900">
+                                <tr>
+                                  <td className="py-2 font-medium">フレームワーク</td>
+                                  <td className="py-2">Next.js v15（App Router）、React 19</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">言語</td>
+                                  <td className="py-2">TypeScript</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">スタイル</td>
+                                  <td className="py-2">Sass</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">テスト</td>
+                                  <td className="py-2">Vitest、Testing Library、Vitest Browser Mode</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">UI カタログ</td>
+                                  <td className="py-2">Storybook</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">API 型生成</td>
+                                  <td className="py-2">Orval（OpenAPI）</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">モック</td>
+                                  <td className="py-2">MSW（Mock Service Worker）</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">モニタリング</td>
+                                  <td className="py-2">New Relic</td>
+                                </tr>
+                                <tr>
+                                  <td className="py-2 font-medium">AI</td>
+                                  <td className="py-2">Claude Code</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
