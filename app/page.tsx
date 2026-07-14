@@ -14,7 +14,7 @@ export default function ResumePage() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <div>
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-stone-900 dark:text-white mb-3 font-sans">
-                有村 太郎
+                有村 勇樹
               </h1>
               <p className="text-lg md:text-xl text-amber-700 dark:text-amber-500 font-medium tracking-wide">
                 フロントエンドエンジニア
@@ -39,7 +39,7 @@ export default function ResumePage() {
 
             <div className="space-y-4 text-stone-800 dark:text-stone-200 text-sm leading-relaxed">
               <p>フロントエンドのテックリードとして、AIを活用しながら「圧倒的な個の力で複数プロジェクトを推進できる技術リーダー」を目指しています。</p>
-              <p>現時点では、1プロダクトをテックリードとして推進することが主な役割となっており、複数プロダクトを同時にリードするにはまだキャパシティが不足していること認識しています。しかし、AIの進化により開発生産性が大きく向上している現在においては、個の能力を拡張することで、少人数でも複数プロジェクトを推進できる環境が整いつつあると考えています。</p>
+              <p>現時点では、1プロダクトをテックリードとして推進することが主な役割となっており、複数プロダクトを同時にリードするにはまだキャパシティが不足していると認識しています。しかし、AIの進化により開発生産性が大きく向上している現在においては、個の能力を拡張することで、少人数でも複数プロジェクトを推進できる環境が整いつつあると考えています。</p>
               <p>これまでの開発では、チームの人数を増やして開発規模を拡張するアプローチが主流でしたが、AIの進化により、少人数でも大規模な開発を推進できる時代に移行していると考えています。そのため、組織規模に依存せず、設計力・技術判断力・AI活用力を高めることで、1人あたりの生産性を最大化し、複数プロジェクトを横断的にリードできるエンジニアを目指しています。</p>
               <p>具体的には以下の領域を強化していきたいと考えています。</p>
             </div>
@@ -53,7 +53,7 @@ export default function ResumePage() {
             </div>
 
             <div className="space-y-4 text-stone-800 dark:text-stone-200 text-sm leading-relaxed">
-              <p>将来的には、複数プロダクトを横断して技術的な意思決定を行うフロントエンド責任者や、技術戦略をリード出来る人員となり、事業成長に貢献していきたいと考えています。</p>
+              <p>将来的には、複数プロダクトを横断して技術的な意思決定を行うフロントエンド責任者や、技術戦略をリードできる人材となり、事業成長に貢献していきたいと考えています。</p>
               <p>また、技術力だけでなく、開発プロセス改善やチーム全体の生産性向上にも関与し、少人数でも高いアウトプットを実現できる開発体制の構築にも取り組んでいきたいと考えています。</p>
             </div>
           </div>
@@ -465,7 +465,7 @@ export default function ResumePage() {
                   <div className="p-6 md:p-8 bg-white dark:bg-stone-900/10 border border-stone-200/50 dark:border-stone-800/50 rounded-2xl hover:border-stone-300 dark:hover:border-stone-700 transition-all shadow-sm">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
                       <h4 className="text-lg font-bold text-stone-900 dark:text-white tracking-tight">
-                        ＋メッセージの 送客サービス、抽選サービスの作成
+                        ＋メッセージの送客サービス、抽選サービスの作成
                       </h4>
                       <span className="text-xs font-bold tracking-wider text-amber-700 dark:text-amber-500 uppercase">
                         2023年4月~2024年5月
@@ -474,7 +474,7 @@ export default function ResumePage() {
 
                     <div className="text-stone-800 dark:text-stone-200 text-sm leading-relaxed mb-6 space-y-2">
                       <h5 className="font-bold text-stone-900 dark:text-white">プロジェクト概要</h5>
-                      <p>＋メッセージの 送客サービス、抽選サービスの作成</p>
+                      <p>＋メッセージの送客サービス、抽選サービスの作成</p>
                       <p className="text-xs text-stone-500 dark:text-stone-400">※ ＋メッセージとは <a target="_blank" rel="noopener noreferrer" href="https://www.au.com/mobile/service/plus-message/" className="text-amber-700 underline dark:text-amber-500">https://www.au.com/mobile/service/plus-message/</a></p>
                     </div>
 
@@ -738,10 +738,7 @@ export default function ResumePage() {
 
       </main>
 
-      {/* フッター */}
-      <footer className="mt-24 border-t border-stone-200/60 dark:border-stone-800/60 py-8 text-center text-xs text-stone-400">
-        <p>© 2026 有村 太郎. All Rights Reserved.</p>
-      </footer>
+
     </div>
   );
 }
